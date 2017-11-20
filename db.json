@@ -1,73 +1,10 @@
 {
   "todos": [
     {
-      "id": 1,
-      "name": "configure server",
-      "isCompleted": true,
-      "isComplete": true
-    },
-    {
-      "id": 2,
-      "name": "start server",
-      "isCompleted": false,
-      "isComplete": false
-    },
-    {
       "id": 3,
       "name": "Load data into app",
       "isCompleted": false,
       "isComplete": true
-    },
-    {
-      "id": 4,
-      "name": "Add records",
-      "isCompleted": false,
-      "isComplete": true
-    },
-    {
-      "id": 5,
-      "name": "Update records",
-      "isCompleted": true
-    },
-    {
-      "name": "asd",
-      "isComplete": false,
-      "id": 6
-    },
-    {
-      "name": "new todo",
-      "isComplete": false,
-      "id": 7
-    },
-    {
-      "name": "New todo 2",
-      "isComplete": false,
-      "id": 8
-    },
-    {
-      "name": "Hola",
-      "isComplete": false,
-      "id": 9
-    },
-    {
-      "name": "chao",
-      "isComplete": true,
-      "id": 10
-    },
-    {
-      "name": "Nuevo todo",
-      "isComplete": false,
-      "id": 11
-    },
-    {
-      "name": "Add",
-      "isComplete": false,
-      "id": 12
-    },
-    {
-      "name": "Hola",
-      "isComplete": false,
-      "id": 13
     }
   ]
 }
