@@ -39,7 +39,7 @@ export const toggleTodo = (id) => {
         dispatch(showMessage('Saving todo update'));
         const {todos} = getState().todo;
         const todo = todos.find(t => t.id === id);
-        const toggled = {...todo, isComplete: !todo.isComplete}
+        const toggled = {...todo, isComplete: !todo.isComplete};
         updateTodo(toggled)
             .then(res => dispatch(replaceTodo(res)))
     };
@@ -50,6 +50,17 @@ export const deleteTodo = (id) => {
         dispatch(showMessage('Removing Todo'));
         destroyTodo(id)
             .then(() => dispatch(removeTodo(id)))
+    }
+};
+
+export const getVisibleTodos = (todos, filter) => {
+    switch (filter) {
+        case 'active':
+            return todos.filter(t => !t.isComplete);
+        case 'completed':
+            return todos.filter(t => t.isComplete);
+        default:
+            return todos;
     }
 };
 

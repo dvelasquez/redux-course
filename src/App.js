@@ -4,7 +4,7 @@ import './App.css';
 import TodoForm from './components/TodoForm';
 import TodoList from './components/TodoList';
 import Message from './components/Message';
-import {BrowserRouter as Router} from 'react-router-dom';
+import {BrowserRouter as Router, Route} from 'react-router-dom';
 import Footer from './components/Footer';
 
 class App extends Component {
@@ -19,7 +19,9 @@ class App extends Component {
                     <div className="Todo-App">
                         <Message message='hello there'/>
                         <TodoForm/>
-                        <TodoList/>
+                        <Route path='/:filter?' render={({match}) => (
+                            <TodoList filter={match.params.filter}/>
+                        )}></Route>
                         <Footer/>
                     </div>
                 </Router>
