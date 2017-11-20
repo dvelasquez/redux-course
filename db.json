@@ -3,22 +3,26 @@
     {
       "id": 1,
       "name": "configure server",
-      "isCompleted": true
+      "isCompleted": true,
+      "isComplete": true
     },
     {
       "id": 2,
       "name": "start server",
-      "isCompleted": false
+      "isCompleted": false,
+      "isComplete": false
     },
     {
       "id": 3,
       "name": "Load data into app",
-      "isCompleted": false
+      "isCompleted": false,
+      "isComplete": true
     },
     {
       "id": 4,
       "name": "Add records",
-      "isCompleted": false
+      "isCompleted": false,
+      "isComplete": true
     },
     {
       "id": 5,
@@ -47,7 +51,7 @@
     },
     {
       "name": "chao",
-      "isComplete": false,
+      "isComplete": true,
       "id": 10
     },
     {
